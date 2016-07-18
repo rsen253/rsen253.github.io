@@ -59,5 +59,6 @@ $(function () {
         $(this).closest('li').addClass('active');
     });
 
-    
+    var paragraphheight = $('.service p').height();
+    $('.service-image').css('height', paragraphheight);
 });

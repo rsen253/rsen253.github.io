@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 2em;
 }
 a,
@@ -205,7 +205,8 @@ header .navbar-brand {
 .mission,
 .recent-events,
 .our-work,
-.testimonial{
+.testimonial,
+footer{
     padding-top: 3%;
 }
 .our-work .nav-pills>li>a,
@@ -249,6 +250,135 @@ header .navbar-brand {
     background: url("../images/testomonial.png");
     background-repeat: no-repeat;
 } 
+.user-testimonial{
+    padding-left: 10px;
+}
+.testimonial .carousel-inner .item{
+    height: 222px;
+}
+.testimonial .carousel-caption{
+    color: #6ed3cf;
+    text-shadow: none;
+}
+
+/*footer Section*/
+footer{
+    padding-top: 10px;
+    font-size: 12px;
+    background-color: #443c3c;
+    color: #ffffff;
+}
+footer p span{
+    padding-left: 30px;
+}
+    footer img {
+        height: 40px;
+        width: 40px;
+        border-radius: 5px;
+        
+    }
+footer .copyright{
+    background-color: #222222;
+}
+/*Sign Up*/
+.signUp,
+.service,
+.mission,
+.allactivities{
+    position:relative;
+    padding-top: 160px;
+}
+.login{
+    padding-left: 70px;
+}
+
+/*service html*/
+.service .row{
+    margin-bottom:5px;
+}
+.service-image#service1{
+    background: url(../images/mission1.jpg) no-repeat center center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.service-image#service2{
+    background: url(../images/mission2.jpg) no-repeat center center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.service-image#service3{
+    background: url(../images/mission3.jpg) no-repeat center center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.service-image#service4{
+    background: url(../images/mission1.jpg) no-repeat center center;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+/*mission html*/
+.mission h3,
+.allactivities h3{
+    color: #6ed3cf;
+}
+.mission #missiontarget{
+  border-right: solid 3px #6ed3cf;
+}
+.mission #missiontarget:last-child{
+  border: none;
+}
+.mission #missiontarget p{
+  line-height: 30px;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.mission .missionmoreone,
+.mission .missionmoretwo,
+.mission .missionmorethree {
+    height: 400px;
+    width: 650px;
+    background-color: #5EDACB;
+    height: 78px;
+    width: 213px;
+    text-decoration: underline;
+    margin: 0 auto;
+    -moz-transition: background-color ease-out 0.7s;
+    -o-transition: background-color ease-out 0.7s;
+    -webkit-transition: background-color ease-out 0.7s;
+    transition: background-color ease-out 0.7s;
+}
+.mission .missionmoretwo{
+  background-color: #354874;
+}
+.mission .missionmorethree{
+  background-color: #F9274F;
+}
+.mission a{
+  color: white;
+  text-decoration: none;
+}
+.mission a .missionmoreone:hover
+{
+  background-color: #1CC7B3;
+}
+.mission a .missionmoretwo:hover{
+  background-color: #122E6D;
+}
+.mission a .missionmorethree:hover{
+  background-color: #BD0629;
+}
+.mission a h1{
+  padding-top: 17px;
+  padding-bottom: 5px;
+}
+.mission{
+    padding-bottom: 20px;
+ }
+/*All activities*/
+.allactivities .category a{
+    color: #6ed3cf;
+}
 @media only screen and (max-width: 999px) {
     body {
         font-size: 1.5em;
