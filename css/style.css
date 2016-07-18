@@ -1,15 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700);
-body{
-  
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 2em;
-  
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
 }
-section h2{
+a,
+a:hover{
+    text-decoration: none;
+}
+section h2 {
     color: #6ed3cf;
 }
-hr{
+
+hr {
     border-color: #6ed3cf;
 }
 /*h1, h2, h3, h4, h5, h6 {
@@ -19,58 +23,60 @@ hr{
 }*/
 
 img {
-	max-width: 200px;
+    max-width: 200px;
 }
 /*Header style*/
 
 header .navbar {
-  padding: 20px 0;
-  transition: all .5s ease-out;
+    padding: 20px 0;
+    transition: all .5s ease-out;
 }
 
 header .navbar-default {
-  background-color: transparent;
-  border: none;
+    background-color: transparent;
+    border: none;
 }
 
-header .navbar-default .navbar-nav a {
-  color: white;
-  padding: 5px 8px;
-  opacity: 1;
-}
+    header .navbar-default .navbar-nav a {
+        color: white;
+        padding: 5px 8px;
+        opacity: 1;
+    }
 
-header .navbar-default .navbar-nav a:hover,
-header .navbar-default .navbar-nav a:focus {
-  color: #6ed3cf;
-}
+        header .navbar-default .navbar-nav a:hover,
+        header .navbar-default .navbar-nav a:focus {
+            color: #6ed3cf;
+        }
 
-header .navbar-default .navbar-nav .active a {
-  font-weight: 700;
-  color: #6ed3cf;
-  background: transparent;
-  border-bottom: 4px solid #6ed3cf;
-  text-shadow: none;
-}
+    header .navbar-default .navbar-nav .active a {
+        font-weight: 700;
+        color: #6ed3cf;
+        background: transparent;
+        border-bottom: 4px solid #6ed3cf;
+        text-shadow: none;
+    }
 
-header .navbar-default .navbar-nav .active a:hover {
-  color: #6ed3cf;
-  background: transparent;
-  text-shadow: none;
-}
+        header .navbar-default .navbar-nav .active a:hover {
+            color: #6ed3cf;
+            background: transparent;
+            text-shadow: none;
+        }
 
 /*Navbar collaps section for hamburger menu*/
 
 header .navbar-toggle,
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
-  background-color: #6ed3cf;
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #6ed3cf;
 }
 
 header .navbar-default .navbar-toggle .icon-bar {
-  background-color: white;
+    background-color: white;
 }
-.navbar-collapse{
+
+.navbar-collapse {
     text-align: center;
 }
+
 @media only screen and (max-width: 768px) {
     header .navbar-collapse {
         background-color: rgba(0,0,0, .5);
@@ -80,39 +86,39 @@ header .navbar-default .navbar-toggle .icon-bar {
 /**  nav inbody **/
 
 header .inbody {
-  /*background: rgba(104,73,49,.9);*/
-  /*background : #89bdd3;*/
-  background :#4c726f;
-  opacity: 0.9;
+    /*background: rgba(104,73,49,.9);*/
+    /*background : #89bdd3;*/
+    background: #4c726f;
+    opacity: 0.9;
 }
 
 header .navbar.inbody {
-  padding-top: 0;
-  padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-header .navbar.inbody .navbar-nav {
-  padding-top: 10px;
-}
+    header .navbar.inbody .navbar-nav {
+        padding-top: 10px;
+    }
 
 header .inbody .navbar-brand {
-  background-size: 43px;
-  background-position: top left;
-  margin-top: 5px;
-  padding-bottom: 0;
-  margin-left: 10px;
+    background-size: 43px;
+    background-position: top left;
+    margin-top: 5px;
+    padding-bottom: 0;
+    margin-left: 10px;
 }
 
-header .inbody .navbar-brand h1 {
-  font-size: 1.1em;
-  padding-left: 38px;
-}
+    header .inbody .navbar-brand h1 {
+        font-size: 1.1em;
+        padding-left: 38px;
+    }
 
-header .inbody .navbar-brand span.subhead {
-  display: none;
-}
+    header .inbody .navbar-brand span.subhead {
+        display: none;
+    }
 /*Navbar logo*/
-header .navbar-brand {    
+header .navbar-brand {
     background: url(../images/logo.png);
     background-size: 50% 100%;
     background-repeat: no-repeat;
@@ -120,50 +126,131 @@ header .navbar-brand {
     height: auto;
 }
 
-header .navbar-brand h1 {
-  color: white;
-  margin: 0;
-  font-size: 1.8em;
-  font-weight: 400;
-  padding-left: 105px;
-}
+    header .navbar-brand h1 {
+        color: white;
+        margin: 0;
+        font-size: 1.8em;
+        font-weight: 400;
+        padding-left: 105px;
+    }
 
-header .navbar-brand span.subhead {
-  display: block;
-  font-family: "Roboto Slab", serif;
-  font-size: .6em;
-  font-weight: 100;
-}
+    header .navbar-brand span.subhead {
+        display: block;
+        font-family: "Roboto Slab", serif;
+        font-size: .6em;
+        font-weight: 100;
+    }
 
 /*Navbar logo*/
+/*Carousel Indicator*/
+.carousel-indicators .active {
+    background-color: #6ed3cf;
+}
+/*Carousel fade effect*/
 
+.carousel.fade {
+    opacity: 1;
+}
+.carousel.fade .item {
+    -moz-transition: opacity ease-out .7s;
+    -o-transition: opacity ease-out .7s;
+    -webkit-transition: opacity ease-out .7s;
+    transition: opacity ease-out .7s;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    display: block;
+}
+.carousel.fade .item:first-child{
+    top : auto;
+    opacity: 1;
+    position: relative;
+}
+.carousel.fade .item.active{
+    opacity: 1;
+}
+.carousel-control{
+    opacity: 0;
+}
+.carousel-control.left,
+.carousel-control.right{
+    background-image: none;
+}
+/*Full screen*/
+#featured .item{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
 /*Header style*/
 .navbar {
-  border-radius: 0;
-  border: 0;
+    border-radius: 0;
+    border: 0;
 }
 /*News Letter*/
-.newsletter{
-    padding-top : 1%;
+.newsletter {
+    padding-top: 1%;
 }
-.newsletter input,
-.newsletter button{
-    margin-right: 10px;
-}
+
+    .newsletter input,
+    .newsletter button {
+        margin-right: 10px;
+    }
 /*News Letter*/
 /*Our mission*/
-.mission{
+.mission,
+.recent-events,
+.our-work,
+.testimonial{
     padding-top: 3%;
 }
-.img-mission{
+.our-work .nav-pills>li>a,
+.our-work .work-item{
+    margin-bottom: 1em;
+}
+.img-mission {
     border-radius: 50%;
     height: 200px;
     width: 200px;
 }
 /*Our Mission*/
-@media only screen and (max-width: 999px){
-    body{
-        font-size : 1.5em;
+/*Recent events*/
+
+.recent-events .join-now{
+    background-image: url(../images/testimonial-mcphersons.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.recent-events .view-more-events
+{
+    background: #d1d1d1;
+    width: 155px;
+}
+
+/*our work*/
+.our-work {
+    font-size: 12px;
+}
+.our-work .filerby{
+    padding: 10px 15px 10px 0;
+    font-weight: bold;
+
+}
+
+/*testomonial*/
+.testimonial
+{
+    background: url("../images/testomonial.png");
+    background-repeat: no-repeat;
+} 
+@media only screen and (max-width: 999px) {
+    body {
+        font-size: 1.5em;
     }
-    
 }
