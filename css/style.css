@@ -284,7 +284,10 @@ footer .copyright{
 .signUp,
 .service,
 .mission,
-.allactivities{
+.allactivities,
+.activity-details,
+.profile,
+.add-newevent{
     position:relative;
     padding-top: 160px;
 }
@@ -378,6 +381,72 @@ footer .copyright{
 /*All activities*/
 .allactivities .category a{
     color: #6ed3cf;
+}
+
+.allactivities .event-location{
+    font-size: 14px;
+    color: rgba(0,0,0, .5);
+    border-right: 1px solid #6ed3cf;
+}
+.allactivities .event-date {
+    font-size: 14px;
+    color: rgba(0,0,0, .5);
+}
+.allactivities .event-details{
+    font-size: 16px;
+}
+.allactivities .events h4{
+    color:#6ed3cf;
+}
+.allactivities .events .event-details{
+    color: #000000;
+}
+.allactivities .event-information .col-sm-12{
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+/*activity details*/
+.activity-details .btn-help{
+    background-color: #6ed3cf;
+}
+.activity-details .event-additional-information{
+    color: #5a5a5a;
+}
+.activity-details .event-description{
+    padding-top: 20px;
+}
+.activity-details .total-feedback{
+border: 3px solid #f5f5f5;
+    width: 22%;
+    color: #5f5f5f;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.activity-details .feedback{
+    padding-top: 30px;
+}
+.activity-details .user-comments .comment{
+    font-size: 14px;
+    color: #5a5a5a;
+}
+.activity-details .user-comments{
+    padding-top: 20px;
+}
+/*Profile page*/
+.profile{
+    color: #5a5a5a;
+}
+.profile .attended-events ul li a{
+    font-size: 14px;
+    color:#122E6D;
+}
+.profile .user-details{
+    padding-top: 20px;
+}
+.profile .user-details .btn-new-event{
+    width: 50%;
+    height: 56px;
+    font-size: 20px;
 }
 @media only screen and (max-width: 999px) {
     body {

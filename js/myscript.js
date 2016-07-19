@@ -61,4 +61,12 @@ $(function () {
 
     var paragraphheight = $('.service p').height();
     $('.service-image').css('height', paragraphheight);
+
+
+    $("#datepicker").datepicker({
+        changeMonth: true,
+        changeYear: true
+    });
+
+    CKEDITOR.replace('description');
 });
