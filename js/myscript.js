@@ -9,8 +9,20 @@ $(function () {
         else {
             $('header nav').removeClass('inbody');
         }
-
     });
+
+    //Page animation
+    //var mission = $('.mission .img-mission');
+    //mission.css('opacity', 0);
+    //mission.waypoint(function () {
+    //    mission.addClass('animated fadeInUp');
+    //}, { offset: '50%' });
+
+    //$('.mission .mission-details').css('opacity', 0);
+
+    //$('.mission .mission-details').waypoint(function () {
+    //    $('.mission .mission-details').addClass('animated fadeIn');
+    //}, { offset: '60%' });
 
     //Automatic carousel indicator
     var SlideNumber = $('#featured .item').length;
@@ -69,4 +81,7 @@ $(function () {
     });
 
     CKEDITOR.replace('description');
+
+    
+
 });
